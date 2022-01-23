@@ -6,8 +6,8 @@ layout: default
     <img class="app__logo" src="/assets/images/appicon.png" alt="{{ site.data.app.name }} Icon">
   </div>
   <div class="app__infos">
-    <h1 class="app__name">{{ site.data.app.name }}</h1>
-    <p class="app__description">{{ site.data.app.description }}</p>
+    <h1 class="app__name">Xskape</h1>
+    <p class="app__description">Live stream lifes most amazing moments</p>
     <div class="app__buttons app__buttons--desktop">
       {% if site.data.app.android != false %}
       <a href="{{ site.data.app.android }}" class="app__button-play" target="_blank"><img src="/assets/images/google-play-badge.png" alt="Get on Google Play"></a>
@@ -38,20 +38,16 @@ layout: default
   </div>
   <div class="app__screenshots-wrapper container-desktop">
     <div class="app__screenshots-list">
-      {% for screenshot in site.data.app.screenshots %}
-      <a href="/assets/images/screenshots/{{ screenshot }}" class="lightbox">
-       <img src="/assets/images/screenshots/{{ screenshot }}" class="app__screenshot">
+      <a href="/assets/images/screenshots/1.png" class="lightbox">
+        <img src="/assets/images/screenshots/1.png" class="app__screenshot">
       </a>
-      {% endfor %}
+      <a href="/assets/images/screenshots/2.png" class="lightbox">
+        <img src="/assets/images/screenshots/2.png" class="app__screenshot">
+       </a>
     </div>
   </div>
 </section>
-<section class="app__fulldescription app__section container">
-  <h2 class="app__section-title">{{ site.data.strings.app.description }}</h2>
-  <div class="app__fulldescription-content">
-    <p>{{ site.data.app.full_description }}</p>
-  </div>
-</section>
+
 <section class="app__featured app__section container">
   <h2 class="app__section-title">{{ site.data.strings.app.featured }}</h2>
   <div class="app__featured-content">
